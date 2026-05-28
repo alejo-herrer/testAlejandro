@@ -1,4 +1,4 @@
-import { listTaskController } from "../controllers/tasks.controller.js";
+import { listTaskController, newTaskController } from "../controllers/tasks.controller.js";
 
 export async function taskRoutes(req,res){
 
@@ -9,6 +9,11 @@ export async function taskRoutes(req,res){
     if(url === '/tasks' && method === 'GET'){
        return listTaskController(req,res)
     }
+
+    if(url === '/tasks' && method === 'POST'){
+       return newTaskController(req,res)
+    }
+
 
     res.statusCode = 404
     return res.end(JSON.stringify({message: 'Página no encontrada'}))

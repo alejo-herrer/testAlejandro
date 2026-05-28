@@ -1,11 +1,14 @@
-
 [
-    {   
-        "id"    :   "1",
-        "name"  :   "manzana"
-    },
-    {   
-        "id"    :   "2",
-        "name"  :   "fresas"
-    }
+  {
+    "id": "1",
+    "name": "manzana"
+  },
+  {
+    "id": "2",
+    "name": "fresas"
+  },
+  {
+    "id": "5",
+    "name": "platano"
+  }
 ]
