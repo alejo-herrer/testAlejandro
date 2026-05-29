@@ -17,7 +17,7 @@ export async function newTaskController(req, res){
         })
 
         req.on('end', async() => {
-
+                console.log('DATA RECIBIDA: '.body)
                 const newTask = JSON.parse(body)
                 const data = await listTasks()
                 const tasks = JSON.parse(data)
